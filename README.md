@@ -4,7 +4,7 @@
 
 This repository presents the implementation of a custom differentia drive robot capable of performing **Simultaneous Localization and Mapping (SLAM), autonomous navigation** (with dynamic obstacle avoidance), and **mission execution** in a warehouse environment.
 
-!https://github.com/iShuchi/Finite-State-Machine-Navigation/blob/main/videos/demo.mp4
+![FSM Navigation Demo](videos/demo.gif)
 
 Packages Utilized:
 
