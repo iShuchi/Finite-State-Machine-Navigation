@@ -109,11 +109,7 @@ This generates an **occupancy grid** with .yaml and .pgm format.
 
 ## Simultaneous Localization and Mapping (SLAM)
 
-SLAM-Toolbox uses **graph-based 2D SLAM** approach.
-
-### Mathematical Formulation
-
-Each robot pose is represented as a node in pose graph, with constraints from the optimization problem. Laser scan matching is performed using **correlative scan matching** to minimize drift errors.
+SLAM-Toolbox uses **graph-based 2D SLAM** approach. Each robot pose is represented as a node in pose graph, with constraints from the optimization problem. Laser scan matching is performed using **correlative scan matching** to minimize drift errors.
 
 ## Mapping Additionals
 
@@ -151,11 +147,7 @@ If a different map is used, update the following line in:
 
 ## Localization (AMCL)
 
-Nav2 uses **Adaptive Monte Carlo Localization (AMCL)**.
-
-### Mathematical Model
-
-The robot belief is represented by particles. Particles are resampled based on likelihood computed using the LiDAR likelihood field model. Navigation stack uses **Global** and **Local Path Planners** to dynamically evaluate the path and avoid obstacles during navigation.
+Nav2 uses **Adaptive Monte Carlo Localization (AMCL)**. The robot belief is represented by particles. Particles are resampled based on likelihood computed using the LiDAR likelihood field model. Navigation stack uses **Global** and **Local Path Planners** to dynamically evaluate the path and avoid obstacles during navigation.
 
 ## Mission Manager
 
