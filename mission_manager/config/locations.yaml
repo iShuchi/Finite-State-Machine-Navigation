@@ -1,0 +1,17 @@
+pickup_zone:
+  frame_id: map
+  x: 0.0707
+  y: 1.9399
+  yaw: 1.96
+
+dropoff_zone:
+  frame_id: map
+  x: 1.0345
+  y: -5.0160
+  yaw: 2.82
+
+dock_zone:
+  frame_id: map
+  x: -4.1089
+  y: -6.4657
+  yaw: 1.83
