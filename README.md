@@ -113,21 +113,7 @@ SLAM-Toolbox uses **graph-based 2D SLAM** approach.
 
 ### Mathematical Formulation
 
-Each robot pose is represented as a node in pose graph, with constraints from:
-
-The optimization problem:
-
-[
-\hat{x} = \arg \min_x \sum_{i,j} | z_{ij} - h(x_i, x_j) |^2_{\Omega_{ij}}
-]
-
-Where:
-
-* z_{ij}= relative pose measurement
-* h(\cdot)= motion model
-* \Omega_{ij}= information matrix
-
-Laser scan matching is performed using **correlative scan matching** to minimize drift errors.
+Each robot pose is represented as a node in pose graph, with constraints from the optimization problem. Laser scan matching is performed using **correlative scan matching** to minimize drift errors.
 
 ## Mapping Additionals
 
@@ -169,15 +155,7 @@ Nav2 uses **Adaptive Monte Carlo Localization (AMCL)**.
 
 ### Mathematical Model
 
-The robot belief is represented by particles {x^k}_{k=1}^N.
-
-Weight update:
-
-[
-w_k \propto p(z_t | x_k, m)
-]
-
-Particles are resampled based on likelihood computed using the LiDAR likelihood field model. Navigation stack uses **Global** and **Local Path Planners** to dynamically evaluate the path and avoid obstacles during navigation.
+The robot belief is represented by particles. Particles are resampled based on likelihood computed using the LiDAR likelihood field model. Navigation stack uses **Global** and **Local Path Planners** to dynamically evaluate the path and avoid obstacles during navigation.
 
 ## Mission Manager
 
