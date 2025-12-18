@@ -4,7 +4,7 @@
 
 This repository presents the implementation of a custom differentia drive robot capable of performing **Simultaneous Localization and Mapping (SLAM), autonomous navigation** (with dynamic obstacle avoidance), and **mission execution** in a warehouse environment.
 
-!https://github.com/iShuchi/Finite-State-Machine-Navigation/blob/main/media/demo.mp4
+!https://github.com/iShuchi/Finite-State-Machine-Navigation/blob/main/videos/demo.mp4
 
 Packages Utilized:
 
@@ -16,6 +16,7 @@ Packages Utilized:
 
 In the host workspace, I have using following tree architecture:
 
+```text
 delhivery_ws/
 ├── src/
 │   └── navigation/
@@ -68,6 +69,7 @@ delhivery_ws/
 │       │   └── package.xml
 │
 └── README.md
+```
 
 ## Execution
 
@@ -137,7 +139,7 @@ To reduce drift during SLAM, I went through following settings:-
 * Move slowly in narrow aisles and corners
 
 
-## 🧭 Navigation & Localization (Nav2)
+## Navigation & Localization (Nav2)
 
 This section deals with use of Navigation Stack (Nav2).
 
@@ -161,7 +163,7 @@ If a different map is used, update the following line in:
 
 ---
 
-## 📍 Localization (AMCL)
+## Localization (AMCL)
 
 Nav2 uses **Adaptive Monte Carlo Localization (AMCL)**.
 
@@ -177,7 +179,7 @@ w_k \propto p(z_t | x_k, m)
 
 Particles are resampled based on likelihood computed using the LiDAR likelihood field model. Navigation stack uses **Global** and **Local Path Planners** to dynamically evaluate the path and avoid obstacles during navigation.
 
-## 🤖 Mission Manager
+## Mission Manager
 
 Pickup, drop, and dock poses are defined by sending Nav2 goals and observing coordinates echoed in the topic:
 
@@ -220,7 +222,7 @@ To reduce drift and oscillations:
 
 These changes improve path stability and localization accuracy.
 
-## 🔮 Future Work
+## Future Work
 
 * More detailed FSM branches for multiple order permutations
 * Sensor fusion using Extended Kalman Filter (EKF)

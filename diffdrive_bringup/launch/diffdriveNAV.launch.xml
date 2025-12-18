@@ -24,7 +24,7 @@
     <include file="$(find-pkg-share nav2_bringup)/launch/bringup_launch.py">
         <arg name="use_sim_time" value="True"/>
         <arg name="map" value="$(find-pkg-share diffdrive_description)/maps/Warehouse.yaml"/>
-        <arg name="params_file" value="$(find-pkg-share diffdrive_description)/config/param_nav2.yaml"/>
+        <arg name="params_file" value="$(find-pkg-share diffdrive_description)/config/NAV2.yaml"/>
             
     </include>
 
