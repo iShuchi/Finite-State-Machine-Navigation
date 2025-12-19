@@ -90,7 +90,7 @@ source ~/workspace/install/setup.bash
 ### Launch Mapping
 
 ```bash
-ros2 launch diffdrive_bringup diffdriveMAP.launch.xml
+ros2 launch diffdrive_bringup diffdriveSLAM.launch.xml
 ```
 
 ### Keyboard Control (Teleop)
